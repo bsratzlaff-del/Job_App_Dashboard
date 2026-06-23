@@ -12,7 +12,7 @@ document.querySelector('#app').innerHTML = `
     <img src="${viteLogo}" class="vite" alt="Vite logo" />
   </div>
   <div>
-    <h1>Get started</h1>
+    <h1>Got started</h1>
     <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
   </div>
   <button id="counter" type="button" class="counter"></button>
@@ -23,8 +23,8 @@ document.querySelector('#app').innerHTML = `
 <section id="next-steps">
   <div id="docs">
     <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
+    <h2>Application Documents</h2>
+    <p>All Google Files needed to succeed in job application process</p>
     <ul>
       <li>
         <a href="https://vite.dev/" target="_blank">
