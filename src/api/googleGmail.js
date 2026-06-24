@@ -1,7 +1,7 @@
 import googleClient from './googleClient';
 
 //fetch recent inbox emails from Gmail
-export const getRecentInboxEmails = async () => {
+export const getRecentInboxGmails = async () => {
     const oneWeekAgo = new Date();
     //how to solve this?
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
@@ -18,7 +18,7 @@ export const getRecentInboxEmails = async () => {
 
 
 //fetch a specific email from Gmail (Subject, From, Body, etc.)
-export const getEmail = async (emailId) => {
+export const getGmail = async (emailId) => {
     const response = await googleClient.get(`/gmail/v1/users/me/messages/${emailId}`, {
         params: {
             format: 'full'
@@ -29,7 +29,7 @@ export const getEmail = async (emailId) => {
 
 
 //send an email using Gmail API
-export const sendEmial = async (to, subject, messageText) => {
+export const sendGmail = async (to, subject, messageText) => {
     const emailPart = [
         'To: ${to}',
         'Subject: ${subject}',

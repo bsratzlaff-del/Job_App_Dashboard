@@ -4,6 +4,14 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
 
+//importing Google API functions from backend
+import { cloneDocsFile, getDocsData, updateDocsData } from './api/googledocs.js';
+import { getSheetsData, updateSheetsData } from './api/googleSheets.js';
+import { getRecentInboxGmails, getGmail, sendGmail } from './api/googleGmail.js';
+
+//importing Microsoft Outlook API functions from backend
+import {getTopLevelFolders, getInboxSubfolders} from './api/microsoftOutlook.js';
+
 document.querySelector('#app').innerHTML = `
 <section id="center">
   <div class="hero">
